@@ -1,9 +1,9 @@
 ﻿# Parse arguments
 
 Param(
-    [Parameter(Position=0)]
-    [ScriptBlock] $Script,
-    [String] $MapFolder = $pwd
+  [Parameter(Position=0)]
+  [ScriptBlock] $Script,
+  [String] $MapFolder = $pwd
 )
 
 $ErrorActionPreference = "Stop"
@@ -11,13 +11,13 @@ $ErrorActionPreference = "Stop"
 $mapFolder = [System.IO.Path]::GetFullPath($MapFolder)
 
 if (-Not (Test-Path -Path $mapFolder -PathType Container)) {
-    Write-Error -Category InvalidArgument -Message 'The provided MapFolder is not a folder.'
+  Write-Error -Category InvalidArgument -Message 'The provided MapFolder is not a folder.'
 }
 
 # Check if Windows Sandbox is enabled
 
 if (-Not (Get-Command 'WindowsSandbox' -ErrorAction SilentlyContinue)) {
-    Write-Error -Category NotInstalled -Message @'
+  Write-Error -Category NotInstalled -Message @'
 Windows Sandbox does not seem to be available. Check the following URL for prerequisites and further details:
 https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview
 
@@ -30,9 +30,9 @@ $ Enable-WindowsOptionalFeature -Online -FeatureName 'Containers-DisposableClien
 
 $sandbox = Get-Process 'WindowsSandboxClient' -ErrorAction SilentlyContinue
 if ($sandbox) {
-    Write-Host '--> Closing Windows Sandbox'
-    $sandbox | Stop-Process
-    Start-Sleep -Seconds 5
+  Write-Host '--> Closing Windows Sandbox'
+  $sandbox | Stop-Process
+  Start-Sleep -Seconds 5
 }
 Remove-Variable sandbox
 
@@ -42,7 +42,7 @@ $tempFolderName = 'Start-Sandbox'
 $tempFolder = Join-Path -Path ([System.IO.Path]::GetTempPath()) -ChildPath $tempFolderName
 
 if (Test-Path -Path $tempFolder) {
-    Remove-Item -Path $tempFolder -Recurse -Force
+  Remove-Item -Path $tempFolder -Recurse -Force
 }
 
 New-Item $tempFolder -ItemType Directory | Out-Null
@@ -65,7 +65,7 @@ Write-Host
 "@
 
 if (-Not [String]::IsNullOrWhiteSpace($Script)) {
-    $bootstrapPs1Content += @"
+  $bootstrapPs1Content += @"
 
 Write-Host @'
 --> Running the following script:
@@ -99,6 +99,7 @@ $sandboxTestWsbContent = @"
     </MappedFolder>
     <MappedFolder>
       <HostFolder>$mapFolder</HostFolder>
+      <ReadOnly>true</ReadOnly>
     </MappedFolder>
   </MappedFolders>
   <LogonCommand>
@@ -119,7 +120,7 @@ Write-Host @"
     - Installing Chocolatey
 "@
 if (-Not [String]::IsNullOrWhiteSpace($Script)) {
-    Write-Host @"
+  Write-Host @"
     - Running the following script:
 
 {
