@@ -3,7 +3,7 @@
   <metadata>
     <!-- PACKAGE -->
     <id>buckets</id>
-    <version>0.63.2</version>
+    <version>0.66.0</version>
     <packageSourceUrl>https://github.com/IndrekHaav/chocolatey-packages/tree/main/manual/buckets</packageSourceUrl>
     <owners>Indrek Haav</owners>
 
@@ -33,7 +33,7 @@ Buckets includes **helpful videos** to teach you how to budget like a master. [C
 ]]></description>
     <releaseNotes>https://github.com/buckets/application/blob/master/CHANGELOG.md</releaseNotes>
     <dependencies>
-      <dependency id="buckets.install" version="[0.63.2]" />
+      <dependency id="buckets.install" version="[0.66.0]" />
     </dependencies>
   </metadata>
   <files>
