@@ -3,7 +3,7 @@
   <metadata>
     <!-- PACKAGE -->
     <id>buckets.install</id>
-    <version>0.66.5</version>
+    <version>0.67.1</version>
     <packageSourceUrl>https://github.com/IndrekHaav/chocolatey-packages/tree/main/manual/buckets.install</packageSourceUrl>
     <owners>Indrek Haav</owners>
 
