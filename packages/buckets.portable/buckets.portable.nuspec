@@ -4,7 +4,7 @@
     <!-- PACKAGE -->
     <id>buckets.portable</id>
     <version>0.67.2</version>
-    <packageSourceUrl>https://github.com/IndrekHaav/chocolatey-packages/tree/main/manual/buckets.portable</packageSourceUrl>
+    <packageSourceUrl>https://github.com/IndrekHaav/chocolatey-packages/tree/main/packages/buckets.portable</packageSourceUrl>
     <owners>Indrek Haav</owners>
 
     <!-- SOFTWARE -->

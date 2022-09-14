@@ -4,7 +4,7 @@
     <!-- PACKAGE -->
     <id>tea</id>
     <version>0.8.0</version>
-    <packageSourceUrl>https://github.com/IndrekHaav/chocolatey-packages/tree/main/manual/tea</packageSourceUrl>
+    <packageSourceUrl>https://github.com/IndrekHaav/chocolatey-packages/tree/main/packages/tea</packageSourceUrl>
     <owners>Indrek Haav</owners>
 
     <!-- SOFTWARE -->
