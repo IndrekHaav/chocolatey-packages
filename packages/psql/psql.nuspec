@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- PACKAGE -->
+    <id>psql</id>
+    <version>14.5</version>
+    <packageSourceUrl>https://github.com/IndrekHaav/chocolatey-packages/tree/main/packages/psql</packageSourceUrl>
+    <owners>Indrek Haav</owners>
+
+    <!-- SOFTWARE -->
+    <title>PostgreSQL CLI client</title>
+    <authors>The PostgreSQL Global Development Group</authors>
+    <projectUrl>https://www.postgresql.org</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/IndrekHaav/chocolatey-packages/0e7277be7b73ef226406333cb596f6bae41e89a6/icons/postgresql.png</iconUrl>
+    <licenseUrl>https://www.postgresql.org/about/licence/</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://git.postgresql.org/gitweb/?p=postgresql.git</projectSourceUrl>
+    <docsUrl>https://www.postgresql.org/docs/current/app-psql.html</docsUrl>
+    <bugTrackerUrl>https://www.postgresql.org/account/submitbug/</bugTrackerUrl>
+    <tags>psql postgresql cli</tags>
+    <summary>PostgreSQL interactive terminal</summary>
+    <description>psql is a terminal-based front-end to PostgreSQL. It enables you to type in queries interactively, issue them to PostgreSQL, and see the query results. Alternatively, input can be from a file or from command line arguments. In addition, psql provides a number of meta-commands and various shell-like features to facilitate writing scripts and automating a wide variety of tasks.</description>
+    <releaseNotes>https://www.postgresql.org/docs/release/</releaseNotes>
+    <dependencies>
+      <dependency id="vcredist140" />
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
