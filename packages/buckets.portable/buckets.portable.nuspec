@@ -12,7 +12,9 @@
     <authors>Matt Haggard</authors>
     <projectUrl>https://www.budgetwithbuckets.com/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/IndrekHaav/chocolatey-packages/1b8775481d616ad436c57e0117fce5d391ad8ac0/icons/buckets.png</iconUrl>
-    <docsUrl>https://docs.budgetwithbuckets.com/</docsUrl>
+    <licenseUrl>https://www.budgetwithbuckets.com/guide/eula/</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://www.budgetwithbuckets.com/guide/</docsUrl>
     <bugTrackerUrl>https://github.com/buckets/application/issues</bugTrackerUrl>
     <tags>finance</tags>
     <summary>Buckets makes budgeting fast, simple and private.</summary>
