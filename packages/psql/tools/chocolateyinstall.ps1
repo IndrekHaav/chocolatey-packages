@@ -4,8 +4,8 @@ $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   PackageName     = $Env:ChocolateyPackageName
-  Url64           = 'https://get.enterprisedb.com/postgresql/postgresql-14.5-1-windows-x64-binaries.zip'
-  Checksum64      = '7e2cd7c82741667c5effd736d5da31fb0aeefc0eba5c8c69f89340519b265017'
+  Url64           = 'https://get.enterprisedb.com/postgresql/postgresql-15.0-1-windows-x64-binaries.zip'
+  Checksum64      = '935BFDDF4CA8E2A97A467FE70F14CA6CF86B61667D0E1189E7977E4C0D27B836'
   ChecksumType64  = 'sha256'
   UnzipLocation   = $toolsDir
   SpecificFolder  = 'pgsql/bin'
@@ -15,11 +15,11 @@ Install-ChocolateyZipPackage @packageArgs
 
 # List of files to keep
 $files = @(
-  'libcrypto-1_1-x64.dll'
+  'libcrypto-3-x64.dll'
   'libiconv-2.dll'
   'libintl-9.dll'
   'libpq.dll'
-  'libssl-1_1-x64.dll'
+  'libssl-3-x64.dll'
   'libwinpthread-1.dll'
   'zlib1.dll'
   'psql.exe'
