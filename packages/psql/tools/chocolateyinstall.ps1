@@ -4,8 +4,8 @@ $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   PackageName     = $Env:ChocolateyPackageName
-  Url64           = 'https://get.enterprisedb.com/postgresql/postgresql-15.0-1-windows-x64-binaries.zip'
-  Checksum64      = '935BFDDF4CA8E2A97A467FE70F14CA6CF86B61667D0E1189E7977E4C0D27B836'
+  Url64           = 'https://get.enterprisedb.com/postgresql/postgresql-15.2-1-windows-x64-binaries.zip'
+  Checksum64      = '1EB278EAC5EECDFD1B8659C06D47B3D25035A98D19FE8BD4E371026E0A418983'
   ChecksumType64  = 'sha256'
   UnzipLocation   = $toolsDir
   SpecificFolder  = 'pgsql/bin'
