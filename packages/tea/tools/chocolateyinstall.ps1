@@ -4,11 +4,11 @@ $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
     PackageName     = $Env:ChocolateyPackageName
-    Url             = 'https://dl.gitea.io/tea/0.9.0/tea-0.9.0-windows-386.exe'
-    Checksum        = '792e0ae2baa6a5ac4c3fef7c19a5489777ea8c1ba3e29044560f16af85c642a2'
+    Url             = 'https://gitea.com/gitea/tea/releases/download/v0.9.2/tea-0.9.2-windows-386.exe'
+    Checksum        = '89555C73716414CB8674BBDCFFE62151A02998B80BF1A54AAC68112551AF4707'
     ChecksumType    = 'sha256'
-    Url64bit        = 'https://dl.gitea.io/tea/0.9.0/tea-0.9.0-windows-amd64.exe'
-    Checksum64      = '1f4d0f4edeec04381811bf888035d20442b43d98ea39743d1661c2e42d1c79ec'
+    Url64bit        = 'https://gitea.com/gitea/tea/releases/download/v0.9.2/tea-0.9.2-windows-amd64.exe'
+    Checksum64      = '7DBBF98468BC829D26D887058F41EA4505CFDF9C7BFFAA6495AAA30B6FE866B1'
     ChecksumType64  = 'sha256'
     FileFullPath    = Join-Path $toolsDir 'tea.exe'
 }
