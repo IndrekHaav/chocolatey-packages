@@ -2,8 +2,8 @@
 
 $packageArgs = @{
     PackageName     = $Env:ChocolateyPackageName
-    Url             = 'https://github.com/buckets/application/releases/download/v0.71.1/Buckets-Setup-0.71.1.exe'
-    Checksum        = '6D93F882238C6C4DE89895E40D4092AFAE936897AAABAEA2CEDB41EE087C3CFA'
+    Url             = 'https://github.com/buckets/application/releases/download/v0.72.1/Buckets-Setup-0.72.1.exe'
+    Checksum        = '78CE0DF45DFB6CBD1DE992C4C8114C15B3BD4DE99312627D26F87C49C2FE8D71'
     ChecksumType    = 'sha256'
     FileType        = 'exe'
     silentArgs      = '/S'

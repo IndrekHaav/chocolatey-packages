@@ -3,7 +3,7 @@
   <metadata>
     <!-- PACKAGE -->
     <id>buckets.portable</id>
-    <version>0.71.1</version>
+    <version>0.72.1</version>
     <packageSourceUrl>https://github.com/IndrekHaav/chocolatey-packages/tree/main/packages/buckets.portable</packageSourceUrl>
     <owners>Indrek Haav</owners>
 
@@ -19,19 +19,9 @@
     <tags>finance</tags>
     <summary>Buckets makes budgeting fast, simple and private.</summary>
     <description><![CDATA[
-Buckets gives you an **untimed, free trial** for as long as you need to decide if it works for you. Really.
+Buckets is a simple family budgeting app based on the envelope method. It is built with privacy in mind - your financial data stays on your computer and under your control. Sharing the budget between multiple devices, including smartphones, is supported, and there are multiple advanced features like macros, bank import and Amazon reconciliation.
 
-Buckets is **private**. Your finances stay on your computer. You control your data again!
-
-Buckets has **no monthly fee**. It costs $49. Once. You're saving money, not shackling yourself to another monthly service. A single license may be used on all your computers and all the computers of family members living in your home.
-
-Buckets has **amazing support**. Want to try it? Click the chat bubble and ask me anything.
-
-Buckets includes some free and novel methods to **sync with your bank**. Record completely private macros, import files or sign up with SimpleFIN Bridge.
-
-Buckets includes some terrific **extras** such as really fast Amazon why-do-they-split-every-purchase-into-a-hundred-transactions reconciliation.
-
-Buckets includes **helpful videos** to teach you how to budget like a master. [Check them out!](https://www.budgetwithbuckets.com/gettingstarted.html)
+Buckets has an unlimited free trial and [a one-time license cost](https://www.budgetwithbuckets.com/buy/).
 ]]></description>
     <releaseNotes>https://github.com/buckets/application/blob/master/CHANGELOG.md</releaseNotes>
   </metadata>
