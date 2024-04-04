@@ -3,7 +3,7 @@
   <metadata>
     <!-- PACKAGE -->
     <id>psql</id>
-    <version>16.1</version>
+    <version>16.2</version>
     <packageSourceUrl>https://github.com/IndrekHaav/chocolatey-packages/tree/main/packages/psql</packageSourceUrl>
     <owners>Indrek Haav</owners>
 
