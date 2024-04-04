@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- PACKAGE -->
+    <id>librepcb.install</id>
+    <version>1.1.0</version>
+    <packageSourceUrl>https://github.com/IndrekHaav/chocolatey-packages/tree/main/packages/librepcb.install</packageSourceUrl>
+    <owners>Indrek Haav</owners>
+
+    <!-- SOFTWARE -->
+    <title>LibrePCB</title>
+    <authors>U. Bruhin</authors>
+    <projectUrl>https://librepcb.org/</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/IndrekHaav/chocolatey-packages/1ded83e355dbf6121cb58564a344b9dceb58085d/icons/librepcb.png</iconUrl>
+    <licenseUrl>https://github.com/LibrePCB/LibrePCB?tab=GPL-3.0-1-ov-file#readme</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/LibrePCB/LibrePCB</projectSourceUrl>
+    <docsUrl>https://librepcb.org/docs/</docsUrl>
+    <bugTrackerUrl>https://github.com/LibrePCB/LibrePCB/issues</bugTrackerUrl>
+    <tags>electronics pcb schematic</tags>
+    <summary>A free, cross-platform EDA suite</summary>
+    <description>LibrePCB is a free, cross-platform, easy-to-use electronic design automation (EDA) suite to draw schematics and design printed circuit boards - for makers, students and professionals, from beginners to experts.</description>
+    <releaseNotes>https://librepcb.org/blog/2024-04-03_release_1.1.0/</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
