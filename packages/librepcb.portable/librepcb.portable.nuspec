@@ -2,9 +2,9 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <!-- PACKAGE -->
-    <id>librepcb.install</id>
+    <id>librepcb.portable</id>
     <version>1.1.0</version>
-    <packageSourceUrl>https://github.com/IndrekHaav/chocolatey-packages/tree/main/packages/librepcb.install</packageSourceUrl>
+    <packageSourceUrl>https://github.com/IndrekHaav/chocolatey-packages/tree/main/packages/librepcb.portable</packageSourceUrl>
     <owners>Indrek Haav</owners>
 
     <!-- SOFTWARE -->
